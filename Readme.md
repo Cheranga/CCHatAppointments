@@ -1,6 +1,6 @@
-## Notes
+# Notes
 
-# Let's get these over with
+## Let's get these over with
 
 - [x] Create "NewAppointmentHandler" azure function.
   - [x] This is an HTTP triggered function (HTTP POST), which will accept new appointment requests.
