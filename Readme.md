@@ -17,9 +17,9 @@
   - [ ] Add a unit test class
   - [ ] Add the test methods.
 
-- [ ] Deploy the function to the cloud using VS2017
-  - [ ] Create a Function App in the Azure portal first.
-  - [ ] Right-click publish the function app from VS2017.
+- [x] Deploy the function to the cloud using VS2017
+  - [x] Create a Function App in the Azure portal first.
+  - [x] Right-click publish the function app from VS2017.
 
 - [ ] Create CI/CD
   - [ ] Create a project in Azure Devops
