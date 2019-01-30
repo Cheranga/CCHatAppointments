@@ -22,10 +22,10 @@
   - [x] Right-click publish the function app from VS2017.
 
 - [ ] Create CI/CD
-  - [ ] Create a project in Azure Devops
+  - [x] Create a project in Azure Devops
   - [ ] Create a build pipeline.
     - [ ] Show the important steps. Especially about the preference setting which you need to make in the devops portal.
-  - [ ] Checkin some code and show the build happening.
+  - [x] Checkin some code and show the build happening.
   - [ ] Create a release pipeline
     - [ ] Show the important things to setup and notice in here.
     - [ ] Set up the release to happen once a successful build is done.
