@@ -16,11 +16,14 @@ namespace AppointmentFunctions
     {
         [FunctionName("NewAppointment")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)]
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]
             HttpRequest req,
             [Queue("new-appointments")] IAsyncCollector<NewAppointmentRequest> newAppointmentsQueue,
             ILogger log)
         {
+            var secretValue = Environment.GetEnvironmentVariable("TestSecret");
+            log.LogInformation($"Secret value is: {secretValue}");
+
             log.LogInformation($"{nameof(NewAppointmentHandler)} called");
 
             var content = await new StreamReader(req.Body).ReadToEndAsync().ConfigureAwait(false);
