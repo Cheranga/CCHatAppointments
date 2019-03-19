@@ -22,6 +22,8 @@ namespace AppointmentFunctions
             ILogger log)
         {
             var secretValue = Environment.GetEnvironmentVariable("TestSecret");
+
+            throw new Exception(secretValue);
             log.LogInformation($"Secret value is: {secretValue}");
 
             log.LogInformation($"{nameof(NewAppointmentHandler)} called");
